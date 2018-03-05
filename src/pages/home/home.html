@@ -1,17 +1,45 @@
 <ion-header>
   <ion-navbar>
-    <ion-title>Home</ion-title>
+    <ion-title>Title</ion-title>
   </ion-navbar>
 </ion-header>
 
-<ion-content padding>
-  <h2>Welcome to Ionic!</h2>
-  <p>
-    This starter project comes with simple tabs-based layout for apps
-    that are going to primarily use a Tabbed UI.
-  </p>
-  <p>
-    Take a look at the <code>src/pages/</code> directory to add or change tabs,
-    update any existing page or create new pages.
-  </p>
+<ion-content class="card-background-page">
+
+  <ion-card (click)="monuments()">
+    <img src="assets/img/HomeCards/gent.jpg" />
+    <div class="card-title">Monuments</div>
+    <div class="card-subtitle">Ancient beauties</div>
+  </ion-card>
+
+  <ion-card>
+    <img src="assets/img/HomeCards/food.jpeg" />
+    <div class="card-title">Food</div>
+    <div class="card-subtitle">Good food, good mood</div>
+  </ion-card>
+
+  <ion-card>
+    <img src="assets/img/HomeCards/drink.jpeg" />
+    <div class="card-title">Drinks</div>
+    <div class="card-subtitle">Drink first, think later</div>
+  </ion-card>
+
+  <ion-card>
+    <img src="assets/img/HomeCards/museum.jpg" />
+    <div class="card-title">Museums</div>
+    <div class="card-subtitle">Broaden your knowledge</div>
+  </ion-card>
+
+  <ion-card>
+    <img src="assets/img/HomeCards/event.jpg" />
+    <div class="card-title">Events</div>
+    <div class="card-subtitle">A little party killed nobody</div>
+  </ion-card>
+
+  <ion-card>
+    <img src="assets/img/HomeCards/hotel.jpg" />
+    <div class="card-title">Hotels</div>
+    <div class="card-subtitle">Sleep is the best meditation</div>
+  </ion-card>
+
 </ion-content>

@@ -1,0 +1,52 @@
+<ion-header>
+  <ion-navbar>
+    <button ion-button clear (click)="home()">
+      <ion-icon color="danger" name="home"></ion-icon>
+    </button>
+    <ion-title>The favourites</ion-title>
+  </ion-navbar>
+</ion-header>
+
+<ion-content class="cards-bg">
+
+  <ng-container *ngFor="let monument of monuments | orderByPipe : 'id': 'false'; let i=index">
+
+    <ion-card *ngIf="i<5">
+
+      <img src="{{ monument.picture }}" />
+
+      <ion-card-content>
+        <ion-card-title>
+          {{ monument.naam }}
+        </ion-card-title>
+        <p>
+          {{ monument.info }}
+        </p>
+      </ion-card-content>
+
+      <ion-row no-padding>
+        <ion-col>
+          <button ion-button clear small color="danger" icon-start>
+            <ion-icon name='thumbs-up'></ion-icon>
+            20 likes
+          </button>
+        </ion-col>
+        <ion-col text-center>
+          <button ion-button clear small color="danger" icon-start>
+            <ion-icon name='bookmark'></ion-icon>
+            Bookmark
+          </button>
+        </ion-col>
+        <ion-col text-right>
+          <button ion-button clear small color="danger" icon-start>
+            <ion-icon name='share-alt'></ion-icon>
+            Share
+          </button>
+        </ion-col>
+      </ion-row>
+
+    </ion-card>
+
+  </ng-container>
+
+</ion-content>
