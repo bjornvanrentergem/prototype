@@ -1,25 +1,26 @@
-<ion-header>
-  <ion-navbar>
-    <ion-title>Title</ion-title>
+<ion-header no-border>
+  <ion-navbar color="theme">
+    <img src="assets/img/logoIcon.png" id="logo">
   </ion-navbar>
 </ion-header>
 
 <ion-content class="card-background-page">
 
-  <ion-card (click)="monuments()">
+  <ion-card (click)="monuments()" class="cardImage">
     <img src="assets/img/HomeCards/gent.jpg" />
     <div class="card-title">Monuments</div>
+    <div class="card-divider>"></div>
     <div class="card-subtitle">Ancient beauties</div>
   </ion-card>
 
   <ion-card>
-    <img src="assets/img/HomeCards/food.jpeg" />
+    <img src="assets/img/HomeCards/food.jpg" />
     <div class="card-title">Food</div>
     <div class="card-subtitle">Good food, good mood</div>
   </ion-card>
 
   <ion-card>
-    <img src="assets/img/HomeCards/drink.jpeg" />
+    <img src="assets/img/HomeCards/drink.jpg" />
     <div class="card-title">Drinks</div>
     <div class="card-subtitle">Drink first, think later</div>
   </ion-card>

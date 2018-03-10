@@ -5,6 +5,9 @@ page-home {
         ion-card {
           position: relative;
           text-align: center;
+          margin: 0px;
+          width: 100%;
+          border-radius: 0%;
         }
       
         .card-title {
@@ -23,6 +26,18 @@ page-home {
           width: 100%;
           color: #fff;
         }
+
+        .CardImage {
+          width: 100%;
+          height: 100%;
+        }
+    }
+
+    #logo{
+      width: 10%;
+      height: 10%;
+      margin: 0 auto;
+      display: block;
     }
 
 }

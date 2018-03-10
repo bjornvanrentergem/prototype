@@ -1,9 +1,6 @@
-<ion-header>
-  <ion-navbar>
-    <button ion-button clear (click)="home()">
-      <ion-icon color="danger" name="home"></ion-icon>
-    </button>
-    <ion-title>In the spotlight</ion-title>
+<ion-header no-border>
+  <ion-navbar color="theme" (click)="home()">
+    <img src="assets/img/logoIcon.png" id="logo">
   </ion-navbar>
 </ion-header>
 
@@ -19,27 +16,27 @@
         <ion-card-title>
           {{ monument.naam }}
         </ion-card-title>
-        <p>
+        <p color="lightDark">
           {{ monument.info }}
         </p>
       </ion-card-content>
 
       <ion-row no-padding>
         <ion-col>
-          <button ion-button clear small color="danger" icon-start>
-            <ion-icon name='thumbs-up'></ion-icon>
+          <button ion-button clear small color="lightDark" icon-start>
+            <ion-icon name='thumbs-up' color="theme"></ion-icon>
             20 likes
           </button>
         </ion-col>
         <ion-col text-center>
-          <button ion-button clear small color="danger" icon-start>
-            <ion-icon name='bookmark'></ion-icon>
+          <button ion-button clear small color="lightDark" icon-start>
+            <ion-icon name='bookmark' color="theme"></ion-icon>
             Bookmark
           </button>
         </ion-col>
         <ion-col text-right>
-          <button ion-button clear small color="danger" icon-start>
-            <ion-icon name='share-alt'></ion-icon>
+          <button ion-button clear small color="lightDark" icon-start>
+            <ion-icon name='share-alt' color="theme"></ion-icon>
             Share
           </button>
         </ion-col>
