@@ -2,6 +2,7 @@ import { Component } from '@angular/core';
 import { IonicPage, NavController, NavParams, App } from 'ionic-angular';
 import { HomePage } from '../home/home';
 import { MonumentsProvider } from '../../providers/monuments/monuments';
+import { MonumentsDetailPage } from '../monuments-detail/monuments-detail';
 
 /**
  * Generated class for the MonumentsSearchPage page.
@@ -28,6 +29,10 @@ export class MonumentsSearchPage {
 
   home(){
     this.app.getRootNav().setRoot(HomePage);
+  }
+
+  detail(){
+    this.navCtrl.push(MonumentsDetailPage);
   }
 
 }

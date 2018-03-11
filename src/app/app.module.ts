@@ -10,6 +10,8 @@ import { RegisterPage } from '../pages/register/register';
 import { MonumentsSpotlightPage } from '../pages/monuments-spotlight/monuments-spotlight';
 import { MonumentsTopPage } from '../pages/monuments-top/monuments-top';
 import { MonumentsSearchPage } from '../pages/monuments-search/monuments-search';
+import { MonumentsDetailPage } from '../pages/monuments-detail/monuments-detail';
+import { SettingsPage } from '../pages/settings/settings';
 
 import { StatusBar } from '@ionic-native/status-bar';
 import { SplashScreen } from '@ionic-native/splash-screen';
@@ -45,6 +47,8 @@ var config = {
     MonumentsSpotlightPage,
     MonumentsTopPage,
     MonumentsSearchPage,
+    MonumentsDetailPage,
+    SettingsPage,
     OrderByPipe
   ],
   imports: [
@@ -63,7 +67,9 @@ var config = {
     RegisterPage,
     MonumentsSpotlightPage,
     MonumentsTopPage,
-    MonumentsSearchPage
+    MonumentsSearchPage,
+    MonumentsDetailPage,
+    SettingsPage
   ],
   providers: [
     StatusBar,

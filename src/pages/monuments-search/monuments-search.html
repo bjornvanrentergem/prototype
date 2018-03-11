@@ -1,19 +1,19 @@
 <ion-header no-border>
-    <ion-navbar color="theme" (click)="home()">
-      <img src="assets/img/logoIcon.png" id="logo">
-    </ion-navbar>
-  </ion-header>
+  <ion-navbar color="theme2" (click)="home()">
+    <img src="assets/img/logoIcon.png" id="logo">
+  </ion-navbar>
+</ion-header>
 
 
 <ion-content padding>
 
   <ion-list>
-    <ion-item *ngFor="let monument of monuments">
+    <ion-item *ngFor="let monument of monuments" (click)="detail()">
 
       <ion-avatar item-start>
         <img src="{{ monument.picture }}">
       </ion-avatar>
-      
+
       <h2>{{ monument.naam }}</h2>
       <p>{{ monument.info }}</p>
     </ion-item>

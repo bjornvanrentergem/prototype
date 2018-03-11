@@ -1,11 +1,12 @@
 import { Component, ViewChild } from '@angular/core';
-import { Platform, Nav } from 'ionic-angular';
+import { Platform, Nav, NavController } from 'ionic-angular';
 import { StatusBar } from '@ionic-native/status-bar';
 import { SplashScreen } from '@ionic-native/splash-screen';
 
 import { LoginPage } from '../pages/login/login';
 import { UserServiceProvider } from '../providers/user-service/user-service';
 import { HomePage } from '../pages/home/home';
+import { SettingsPage } from '../pages/settings/settings';
 
 @Component({
   templateUrl: 'app.html'
@@ -28,5 +29,9 @@ export class MyApp {
     this.userService.logout();
 
     this.nav.setRoot(LoginPage);
+  }
+
+  settings(){
+    this.nav.push(SettingsPage);
   }
 }

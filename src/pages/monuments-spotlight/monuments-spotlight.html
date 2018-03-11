@@ -1,5 +1,5 @@
 <ion-header no-border>
-  <ion-navbar color="theme" (click)="home()">
+  <ion-navbar color="theme2" (click)="home()">
     <img src="assets/img/logoIcon.png" id="logo">
   </ion-navbar>
 </ion-header>
@@ -16,28 +16,24 @@
         <ion-card-title>
           {{ monument.naam }}
         </ion-card-title>
-        <p color="lightDark">
+        <p>
           {{ monument.info }}
         </p>
       </ion-card-content>
 
       <ion-row no-padding>
         <ion-col>
-          <button ion-button clear small color="theme" icon-start>
-            <ion-icon name='thumbs-up' color="theme"></ion-icon>
+          <button ion-button clear small color="theme2" icon-start>
+            <ion-icon name='thumbs-up'></ion-icon>
             20 likes
           </button>
         </ion-col>
-        <ion-col text-center>
-          <button ion-button clear small color="theme" icon-start>
-            <ion-icon name='bookmark' color="theme"></ion-icon>
-            Bookmark
+        <ion-col>
+          <button ion-button float-right clear small color="lightDark" class="iconsRight">
+            <ion-icon name="share-alt"></ion-icon>
           </button>
-        </ion-col>
-        <ion-col text-right>
-          <button ion-button clear small color="theme" icon-start>
-            <ion-icon name='share-alt' color="theme"></ion-icon>
-            Share
+          <button ion-button float-right clear small color="lightDark" class="iconsRight">
+            <ion-icon name="bookmark"></ion-icon>
           </button>
         </ion-col>
       </ion-row>
