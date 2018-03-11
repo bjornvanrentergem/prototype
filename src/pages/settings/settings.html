@@ -5,12 +5,30 @@
   Ionic pages and navigation.
 -->
 <ion-header no-border>
-    <ion-navbar color="theme2" (click)="home()">
-      <img src="assets/img/logoIcon.png" id="logo">
-    </ion-navbar>
-  </ion-header>
+  <ion-navbar color="theme2" (click)="home()">
+    <img src="assets/img/logoIcon.png" id="logo">
+  </ion-navbar>
+</ion-header>
 
 
 <ion-content padding>
+
+  <ion-item>
+    <ion-avatar>
+      <img src="assets/img/HomeCards/drink.jpg">
+    </ion-avatar>
+    <h2>Marty McFly</h2>
+    <p>November 5, 1955</p>
+  </ion-item>
+
+  <ion-item id="firstlabel">
+    <ion-label>1</ion-label>
+    <ion-toggle checked="false" color="theme2"></ion-toggle>
+  </ion-item>
+
+  <ion-item>
+    <ion-label>2</ion-label>
+    <ion-toggle checked="false" color="theme2"></ion-toggle>
+  </ion-item>
 
 </ion-content>
