@@ -1,4 +1,4 @@
-<!--<ion-header no-border>
+<ion-header no-border>
   <ion-navbar color="theme2">
     <img src="assets/img/logoIcon.png" id="logo">
   </ion-navbar>
@@ -6,60 +6,12 @@
 
 <ion-content class="card-background-page">
 
-  <ion-card (click)="monuments()" class="cardImage">
-    <img src="assets/img/HomeCards/gent.jpg" />
-    <div class="card-title">Monuments</div>
+  <ion-card *ngFor="let item of items" (click)="monuments()" class="cardImage">
+    <img src="{{item.background}}" />
+    <div class="card-title">{{item.titel}}</div>
     <div class="card-divider>"></div>
-    <div class="card-subtitle">Ancient beauties</div>
+    <div class="card-subtitle">{{item.subtitel}}</div>
   </ion-card>
 
-  <ion-card>
-    <img src="assets/img/HomeCards/food.jpg" />
-    <div class="card-title">Food</div>
-    <div class="card-subtitle">Good food, good mood</div>
-  </ion-card>
 
-  <ion-card>
-    <img src="assets/img/HomeCards/drink.jpg" />
-    <div class="card-title">Drinks</div>
-    <div class="card-subtitle">Drink first, think later</div>
-  </ion-card>
-
-  <ion-card>
-    <img src="assets/img/HomeCards/museum.jpg" />
-    <div class="card-title">Museums</div>
-    <div class="card-subtitle">Broaden your knowledge</div>
-  </ion-card>
-
-  <ion-card>
-    <img src="assets/img/HomeCards/event.jpg" />
-    <div class="card-title">Events</div>
-    <div class="card-subtitle">A little party killed nobody</div>
-  </ion-card>
-
-  <ion-card>
-    <img src="assets/img/HomeCards/hotel.jpg" />
-    <div class="card-title">Hotels</div>
-    <div class="card-subtitle">Sleep is the best meditation</div>
-  </ion-card>
-
-</ion-content>-->
-
-<ion-header>
-  <ion-navbar>
-    <button ion-button menuToggle>
-      <ion-icon name="menu"></ion-icon>
-    </button>
-    <ion-title>OK</ion-title>
-  </ion-navbar>
-</ion-header>
-
-<ion-content>
-  <ion-list>
-    <ion-item-sliding *ngFor="let item of items">
-      <ion-item (click)="itemTapped($event, item)">
-        {{item.brand}}, {{item.make}}
-        </ion-item>
-      </ion-item-sliding>
-    </ion-list>
-  </ion-content>
+</ion-content>
