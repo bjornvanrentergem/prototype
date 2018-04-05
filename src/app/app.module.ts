@@ -19,6 +19,7 @@ import { SplashScreen } from '@ionic-native/splash-screen';
 import { UserServiceProvider } from '../providers/user-service/user-service';
 import { AuthenticateProvider } from '../providers/authenticate/authenticate';
 import { MonumentsProvider } from '../providers/monuments/monuments';
+import { GhentServiceProvider } from '../providers/ghent-service/ghent-service';
 
 import { AngularFireDatabaseModule } from 'angularfire2/database';
 import { AngularFireModule } from 'angularfire2';
@@ -78,7 +79,8 @@ var config = {
     UserServiceProvider,
     AuthenticateProvider,
     MonumentsProvider,
-    MonumentsProvider
+    MonumentsProvider,
+    GhentServiceProvider
   ]
 })
 export class AppModule {}
