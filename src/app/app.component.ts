@@ -13,7 +13,7 @@ import { SettingsPage } from '../pages/settings/settings';
 })
 export class MyApp {
   @ViewChild(Nav) nav: Nav;
-  rootPage:any = LoginPage;
+  rootPage:any = HomePage;
 
   constructor(platform: Platform, statusBar: StatusBar, splashScreen: SplashScreen, public userService:UserServiceProvider) {
     platform.ready().then(() => {

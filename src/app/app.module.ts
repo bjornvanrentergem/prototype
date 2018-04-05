@@ -30,12 +30,12 @@ import { OrderByPipe } from '../pipes/order-by/order-by';
 
 
 var config = {
-  apiKey: "AIzaSyBReNvdNBykCGFxlsB_Psu6rQmGdWzhZJk",
-  authDomain: "gentapp-32124.firebaseapp.com",
-  databaseURL: "https://gentapp-32124.firebaseio.com",
-  projectId: "gentapp-32124",
-  storageBucket: "",
-  messagingSenderId: "1062118213244"
+  apiKey: "AIzaSyDD8qsNkX7uuFhldSLD7cy0j3YaYYiR3Vc",
+  authDomain: "helloghent.firebaseapp.com",
+  databaseURL: "https://helloghent.firebaseio.com",
+  projectId: "helloghent",
+  storageBucket: "helloghent.appspot.com",
+  messagingSenderId: "922238063879"
 };
 
 @NgModule({
