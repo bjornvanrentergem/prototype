@@ -1,6 +1,6 @@
 import { Component } from '@angular/core';
 
-import { MonumentsSpotlightPage } from '../monuments-spotlight/monuments-spotlight';
+import { SpotlightPage } from '../spotlight/spotlight';
 import { MonumentsTopPage } from '../monuments-top/monuments-top';
 import { MonumentsSearchPage } from '../monuments-search/monuments-search';
 
@@ -9,7 +9,7 @@ import { MonumentsSearchPage } from '../monuments-search/monuments-search';
 })
 export class TabsPage {
 
-  tab1Root = MonumentsSpotlightPage;
+  tab1Root = SpotlightPage;
   tab2Root = MonumentsTopPage;
   tab3Root = MonumentsSearchPage;
 

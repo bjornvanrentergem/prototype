@@ -1,7 +1,6 @@
 import { Component } from '@angular/core';
 import { IonicPage, NavController, NavParams, App } from 'ionic-angular';
 import { HomePage } from '../home/home';
-import { MonumentsProvider } from '../../providers/monuments/monuments';
 
 /**
  * Generated class for the MonumentsSpotlightPage page.
@@ -18,8 +17,7 @@ import { MonumentsProvider } from '../../providers/monuments/monuments';
 export class MonumentsSpotlightPage {
   monuments:any;
 
-  constructor(public navCtrl: NavController, public navParams: NavParams, private app: App, public monumentProvider: MonumentsProvider) {
-    this.monuments = monumentProvider.getAll();
+  constructor(public navCtrl: NavController, public navParams: NavParams, private app: App) {
   }
 
   ionViewDidLoad() {

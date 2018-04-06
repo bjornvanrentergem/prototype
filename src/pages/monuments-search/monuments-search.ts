@@ -1,7 +1,6 @@
 import { Component } from '@angular/core';
 import { IonicPage, NavController, NavParams, App } from 'ionic-angular';
 import { HomePage } from '../home/home';
-import { MonumentsProvider } from '../../providers/monuments/monuments';
 import { MonumentsDetailPage } from '../monuments-detail/monuments-detail';
 
 /**
@@ -19,8 +18,7 @@ import { MonumentsDetailPage } from '../monuments-detail/monuments-detail';
 export class MonumentsSearchPage {
   monuments:any;
 
-  constructor(public navCtrl: NavController, public navParams: NavParams, private app: App, public monumentProvider: MonumentsProvider) {
-    this.monuments = monumentProvider.getAll();
+  constructor(public navCtrl: NavController, public navParams: NavParams, private app: App) {
   }
 
   ionViewDidLoad() {

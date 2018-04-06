@@ -6,7 +6,7 @@
 
 <ion-content class="card-background-page">
 
-  <ion-card *ngFor="let item of items" (click)="monuments()" class="cardImage">
+  <ion-card *ngFor="let item of items" (click)="itemTapped($event, item)" class="cardImage">
     <img src="{{item.background}}" />
     <div class="card-title">{{item.titel}}</div>
     <div class="card-divider>"></div>

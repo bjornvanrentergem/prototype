@@ -1,7 +1,7 @@
 import { Component } from '@angular/core';
-import { NavController, App, NavParams } from 'ionic-angular';
-import { TabsPage } from '../tabs/tabs';
+import { NavController, NavParams } from 'ionic-angular';
 import { GhentServiceProvider } from '../../providers/ghent-service/ghent-service';
+import { TabsPage } from '../tabs/tabs';
 
 @Component({
   selector: 'page-home',
@@ -28,5 +28,6 @@ export class HomePage {
 
   itemTapped(event, item){
     console.log("tapped item", item);
+    this.navCtrl.setRoot(TabsPage, item);
   }
 }

@@ -12,20 +12,18 @@ import { MonumentsTopPage } from '../pages/monuments-top/monuments-top';
 import { MonumentsSearchPage } from '../pages/monuments-search/monuments-search';
 import { MonumentsDetailPage } from '../pages/monuments-detail/monuments-detail';
 import { SettingsPage } from '../pages/settings/settings';
+import { SpotlightPage } from '../pages/spotlight/spotlight';
 
 import { StatusBar } from '@ionic-native/status-bar';
 import { SplashScreen } from '@ionic-native/splash-screen';
 
 import { UserServiceProvider } from '../providers/user-service/user-service';
 import { AuthenticateProvider } from '../providers/authenticate/authenticate';
-import { MonumentsProvider } from '../providers/monuments/monuments';
 import { GhentServiceProvider } from '../providers/ghent-service/ghent-service';
 
 import { AngularFireDatabaseModule } from 'angularfire2/database';
 import { AngularFireModule } from 'angularfire2';
-import { AngularFireAuth, AngularFireAuthModule } from 'angularfire2/auth';
-
-import { OrderByPipe } from '../pipes/order-by/order-by';
+import { AngularFireAuthModule } from 'angularfire2/auth';
 
 
 
@@ -50,7 +48,7 @@ var config = {
     MonumentsSearchPage,
     MonumentsDetailPage,
     SettingsPage,
-    OrderByPipe
+    SpotlightPage,
   ],
   imports: [
     BrowserModule,
@@ -70,7 +68,8 @@ var config = {
     MonumentsTopPage,
     MonumentsSearchPage,
     MonumentsDetailPage,
-    SettingsPage
+    SettingsPage,
+    SpotlightPage
   ],
   providers: [
     StatusBar,
@@ -78,8 +77,6 @@ var config = {
     {provide: ErrorHandler, useClass: IonicErrorHandler},
     UserServiceProvider,
     AuthenticateProvider,
-    MonumentsProvider,
-    MonumentsProvider,
     GhentServiceProvider
   ]
 })

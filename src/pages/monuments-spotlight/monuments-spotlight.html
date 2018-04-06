@@ -6,9 +6,9 @@
 
 <ion-content class="cards-bg">
 
-  <ng-container *ngFor="let monument of monuments | orderByPipe : 'naam': 'true'; let i=index">
+  <ng-container *ngFor="let monument of monuments">
 
-    <ion-card *ngIf="i<5">
+    <ion-card>
 
       <img src="{{ monument.picture }}" />
 
