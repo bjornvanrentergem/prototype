@@ -1,19 +1,33 @@
 page-login {
-
-    img{
-        display: block;
-        width: 60%;
-        margin: 0 auto;
-        padding-bottom: 40px;
-        padding-top: 20px; 
+    .master{
+        background-image: url('../../assets/img/background.jpg');
+        background-repeat: no-repeat;
+        background-size:cover;
     }
-
-    #logo{
-        visibility: hidden;
-        width: 10%;
-        height: 10%;
-        margin: 0 auto;
+    .master img {
         display: block;
-        padding: 0px;
+        width: 80%;
+        margin-right: auto;
+        margin-left: auto;
+        margin-top: 200px;
+        margin-bottom: 20px;
+    }
+    .list-ios{
+        border: none;
+    }
+    .item-content{
+        background-color: transparent;
+        border: none;
+        color: white;
+    }
+    .text-input{
+        color: white;
+        //text-transform: uppercase;
+    }
+    .button{
+        color: white;
+    }
+    .header-md::after{
+        position: unset;
     }
 }

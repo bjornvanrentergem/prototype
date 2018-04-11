@@ -18,10 +18,10 @@ export class SpotlightPage {
   item:any;
 
   constructor(public navCtrl: NavController, public navParams: NavParams) {
-    console.log('Navigated with params', navParams);
 
     if(navParams.data){
       this.item = navParams.data;
+      console.log('Navigated with params', navParams);
     }else{
       console.log('Navigated without params');
     }
